@@ -5,7 +5,7 @@
   font-family: System; 
 }
   
-.body {
+.screen {
   background-image: url("lockdown.png");
 }
 
@@ -28,10 +28,12 @@
 </style>
 </head>
 <body>
-<audio autoplay loop id="kicks">
-  <source src="kicks.mp3" type="audio/mp3">
-</audio>
-<button id="play" onclick="alarm()">Pause</button>
+<div class="screen">
+  <audio autoplay loop id="kicks">
+    <source src="kicks.mp3" type="audio/mp3">
+  </audio>
+</div>
+<button id="play" onclick="alarm()">Lockdown</button>
 </div>
 </body>
 <script>
@@ -43,7 +45,7 @@ function alarm() {
     btn.innerHTML = "Lockdown In progess";
   } else {
     video.pause();
-    btn.innerHTML = "Begin Lockdown";
+    btn.innerHTML = "Lockdown Paused";
   }
 }
 </script>
