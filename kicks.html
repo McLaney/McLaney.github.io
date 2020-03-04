@@ -2,60 +2,48 @@
 <title> P3tray.AGS </title>
 <style>
 * {
-  font-family: Calibri; 
+  font-family: System; 
+}
+  
+.body {
+  background-image: url("lockdown.png");
 }
 
-
-.about {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
-  width: 100%;
-  padding: 0px;
-}
-
-#myBtn {
-  width: 200px;
+#play {
+  left: 45%;
+  width: 10%;
+  top: 90%;
   font-size: 18px;
   padding: 10px;
   border: none;
-  background: #000;
-  color: #fff;
+  background: rbg(0, 0, 0);
+  color: rbg(0, 0, 255);
   cursor: pointer;
 }
 
-#myBtn:hover {
-  background: #ddd;
-  color: black;
+#play:hover {
+  background: rbg(255, 0, 0);
+  color: rbg(0, 0, 255);
 }
 </style>
 </head>
 <body>
-<video autoplay loop id="kicks">
+<audio autoplay loop id="kicks">
   <source src="kicks.mp3" type="audio/mp3">
-</video>
-
-<div class="about">
-  <h1>P3tray.AGS</h1>
-  <h2>Welcome to P3tray.AGS, A website under P3tray.ORG.</h2>
-  <p> <a href="/08001111/"> The games! </a> </p>
-  <p> <a href="/docs/"> How to use the page! </a> </p>
-  
-  <button id="myBtn" onclick="myFunction()">Pause</button>
+</audio>
+<button id="play" onclick="alarm()">Pause</button>
 </div>
 </body>
 <script>
 var video = document.getElementById("kicks");
-var btn = document.getElementById("myBtn");
-function myFunction() {
+var btn = document.getElementById("play");
+function alarm() {
   if (video.paused) {
     video.play();
-    btn.innerHTML = "Pause";
+    btn.innerHTML = "Lockdown In progess";
   } else {
     video.pause();
-    btn.innerHTML = "Play";
+    btn.innerHTML = "Begin Lockdown";
   }
 }
 </script>
