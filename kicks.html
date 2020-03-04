@@ -4,13 +4,7 @@
 * {
   font-family: Calibri; 
 }
-#myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-}
+
 
 .about {
   position: absolute;
@@ -39,8 +33,8 @@
 </style>
 </head>
 <body>
-<video autoplay muted loop id="myVideo">
-  <source src="rain.mp4" type="video/mp4">
+<video autoplay loop id="kicks">
+  <source src="kicks.mp3" type="audio/mp3">
 </video>
 
 <div class="about">
@@ -53,7 +47,7 @@
 </div>
 </body>
 <script>
-var video = document.getElementById("myVideo");
+var video = document.getElementById("kicks");
 var btn = document.getElementById("myBtn");
 function myFunction() {
   if (video.paused) {
