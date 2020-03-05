@@ -44,7 +44,7 @@
     <source src="kicks.mp3" type="audio/mp3">
   </audio>
 </div>
-<button id="play" onclick="alarm()">Lockdown</button>
+<button id="play" onclick="alarm()">Lockdown ▷</button>
 </div>
 </body>
 <script>
@@ -53,10 +53,10 @@ var btn = document.getElementById("play");
 function alarm() {
   if (video.paused) {
     video.play();
-    btn.innerHTML = "Lockdown In progess";
+    btn.innerHTML = "Lockdown ||";
   } else {
     video.pause();
-    btn.innerHTML = "Lockdown Paused";
+    btn.innerHTML = "Lockdown ▷";
   }
 }
 </script>
