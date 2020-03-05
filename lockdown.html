@@ -72,7 +72,7 @@
   <br>Press WIN + L to gain free V-bucks.
   <br>Click to start the alarm. </p>
   </p>
-  <button id="play" onclick="alarm()"> Lockdown ▷ </button>
+  <button id="play" onclick="alarm()"> Lockdown I> </button>
   <audio loop id="kicks">
     <source src="kicks.mp3" type="audio/mp3">
   </audio>
@@ -86,10 +86,10 @@ music.pause();
 function alarm() {
   if (music.paused) {
     music.play();
-    btn.innerHTML = "Lockdown ||";
+    btn.innerHTML = "Lockdown II";
   } else {
     music.pause();
-    btn.innerHTML = "Lockdown ▷";
+    btn.innerHTML = "Lockdown I>";
   }
 }
 </script>
