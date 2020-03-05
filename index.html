@@ -1,10 +1,31 @@
 <head>
+<style>
+@font-face {
+  font-family: fixedsys;
+  src: url("/fixedsys.ttf");
+}
+  
+* {
+  font-family: fixedsys;
+}
+  
+.screen {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background-color: rgb(0, 0, 255);
+}
+</style>
 </head>
 
 <body>
-  <h1> Welcome to the Internet! </h1>
-  <p> Here you can discover "stuff". Enjoy. </p>
-  <a href="/lockdown.html"> Lockdown </a>
-  <a href="/lockdownpng.html"> Lockdown.png (old) </a>
-  <a href="/08001111/index.html"> Anne Frank </a>
+  <div class="screen">
+    <h1> Welcome to the Internet! </h1>
+    <p> Here you can discover "stuff". Enjoy. </p>
+    <a href="/lockdown.html"> Lockdown <br> </a>
+    <a href="/lockdownpng.html"> Lockdown.png (old) <br> </a>
+    <a href="/08001111/index.html"> Anne Frank <br> </a>
+  </div>
 </body>
