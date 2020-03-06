@@ -35,7 +35,15 @@
   font-size: 30px;
   color: rgb(255,255,255);
 }
-
+  
+.error-content-1 {
+  position: absolute;
+  top: 300px;
+  left: 10%;
+  width: 80%;
+  font-size: 30px;
+  color
+}
 </style>
 </head>
 <body>
@@ -45,21 +53,9 @@
     Your PC ran into a problem and needs to restart. We're just collecting some error information, and then we will restart for you.
     <br> <br> 20% complete <br <br>
   </p>
+  <p class="error-content-2">
+  
   </p>
 </div>
 </div>
 </body>
-<script>
-var music = document.getElementById("kicks");
-var btn = document.getElementById("play");
-music.pause();
-function alarm() {
-  if (music.paused) {
-    music.play();
-    btn.innerHTML = "Lockdown II";
-  } else {
-    music.pause();
-    btn.innerHTML = "Lockdown I>";
-  }
-}
-</script>
